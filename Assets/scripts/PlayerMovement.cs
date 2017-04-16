@@ -87,15 +87,13 @@ public class PlayerMovement : MonoBehaviour
 
             if (IsLeftPlayer == true)
             {
-                objectPosition.x = objectPosition.x - 0.5f;
+                objectPosition.x = objectPosition.x - 1f;
                 transform.position = objectPosition;
-
             }
             else
             {
                 objectPosition.x = objectPosition.x + 1f;
                 transform.position = objectPosition;
-
             }
         }
 
