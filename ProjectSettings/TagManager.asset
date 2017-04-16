@@ -7,6 +7,9 @@ TagManager:
   - SP1
   - SP2
   - Ball
+  - PointSP1
+  - PointSP2
+  - background
   layers:
   - Default
   - TransparentFX

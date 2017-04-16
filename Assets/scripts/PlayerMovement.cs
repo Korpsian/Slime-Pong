@@ -84,6 +84,7 @@ public class PlayerMovement : MonoBehaviour
         if(col.gameObject.name == "ball")
         {
             Vector2 objectPosition = transform.position;
+            Debug.Log("HIT Geh zurück!");
 
             if (IsLeftPlayer == true)
             {
