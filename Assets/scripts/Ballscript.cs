@@ -7,15 +7,19 @@ public class Ballscript : MonoBehaviour {
     Animator anim;
     AudioSource audio;
     public AudioClip[] Soundeffekte;
-    public GameObject Manager;
-    
+    private GameObject Manager;
+    private GameObject Spawner;
 
 	void Start () {
+        
 
+        gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(Random.Range(-5,5), Random.Range(-5, 5)) * 7;
 
-        gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(2, 5) * 5;
         anim = GetComponent<Animator>();
         audio = GetComponent<AudioSource>();
+
+        Manager = GameObject.Find("Score Manager");
+        Spawner = GameObject.Find("Spawner");
     }
 	
 	void Update () {
@@ -30,13 +34,17 @@ public class Ballscript : MonoBehaviour {
             Manager.GetComponent<ScoreManager>().UpdateScore();
         }
 
-        Debug.Log("Hit Trigger");
+
         if (col.gameObject.tag == "PointSP2")
         {
             Debug.Log("PointSP2");
             Manager.GetComponent<ScoreManager>().SP2 = Manager.GetComponent<ScoreManager>().SP2 + 1;
             Manager.GetComponent<ScoreManager>().UpdateScore();
         }
+
+        Spawner.GetComponent<Spawner>().Spawn();
+
+        Destroy(this);
     }
 
     void OnCollisionEnter2D(Collision2D col)

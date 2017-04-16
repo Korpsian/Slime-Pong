@@ -12,6 +12,9 @@ public class PlayerMovement : MonoBehaviour
     public float XBoundryRange = 30;
     public float XBoundryMinimumRange = 0.5f;
 
+    //Vector zum Abrufen der Startposition
+    Vector2 StartPosition;
+
     //Variablen für das einsetzen der Input Achsen
     private string InputAxeHorizontal = "SP2 Horizontal";
     private string InputAxeVertikal = "SP2 Vertikal";
@@ -21,6 +24,9 @@ public class PlayerMovement : MonoBehaviour
 
     void Start()
     {
+        //Dient zum zurücksetzen der Spieler
+        StartPosition = transform.position;
+
         //Wenn Linker spieler, ersetze input achsen durch die von SP1
         if (IsLeftPlayer == true)
         {
@@ -81,7 +87,8 @@ public class PlayerMovement : MonoBehaviour
     //Wenn Kollision mit ball, bewege ein schritt zurück
     void OnCollisionEnter2D(Collision2D col)
     {
-        if(col.gameObject.name == "ball")
+        Debug.Log("Kollision");
+        if(col.gameObject.tag == "Ball")
         {
             Vector2 objectPosition = transform.position;
             Debug.Log("HIT Geh zurück!");
@@ -98,6 +105,12 @@ public class PlayerMovement : MonoBehaviour
             }
         }
 
+    }
+
+    public void JumpBack()
+    {
+
+        transform.position = StartPosition;
     }
 
 }

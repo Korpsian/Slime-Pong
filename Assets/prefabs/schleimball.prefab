@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 58794411135717126}
   - component: {fileID: 82128593037342252}
   m_Layer: 0
-  m_Name: schleimball
+  m_Name: Schleimball
   m_TagString: Ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -190,7 +190,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Soundeffekte:
   - {fileID: 0}
-  Manager: {fileID: 0}
 --- !u!212 &212475951098529658
 SpriteRenderer:
   m_ObjectHideFlags: 1
