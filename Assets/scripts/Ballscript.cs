@@ -49,7 +49,6 @@ public class Ballscript : MonoBehaviour {
             Manager.GetComponent<ScoreManager>().UpdateScore();
         }
 
-
         if (col.gameObject.tag == "PointSP2")
         {
             Manager.GetComponent<ScoreManager>().SP2 = Manager.GetComponent<ScoreManager>().SP2 + 1;
