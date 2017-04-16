@@ -4,16 +4,31 @@ using UnityEngine;
 
 public class Ballscript : MonoBehaviour {
 
+    public float StartSpeed = 10;
+    [Range(0, 1)]
+    public float StartYMovementRange = 0.5f;
+    public AudioClip[] Soundeffekte;
+
     Animator anim;
     AudioSource audio;
-    public AudioClip[] Soundeffekte;
+
     private GameObject Manager;
     private GameObject Spawner;
+    private Rigidbody2D phys;
+    private int BounceCounter = 0;
 
 	void Start () {
-        
+        phys = gameObject.GetComponent<Rigidbody2D>();
+        Vector2 StartDirection = new Vector2(1,0);
 
-        gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(Random.Range(-5,5), Random.Range(-5, 5)) * 7;
+        if (Random.value > 0.5f)
+        {
+            StartDirection *= -1;
+        }
+
+        StartDirection += new Vector2(0, Random.Range(-StartYMovementRange,StartYMovementRange));
+
+        phys.velocity = StartDirection * StartSpeed;
 
         anim = GetComponent<Animator>();
         audio = GetComponent<AudioSource>();
@@ -37,22 +52,23 @@ public class Ballscript : MonoBehaviour {
 
         if (col.gameObject.tag == "PointSP2")
         {
-            Debug.Log("PointSP2");
             Manager.GetComponent<ScoreManager>().SP2 = Manager.GetComponent<ScoreManager>().SP2 + 1;
             Manager.GetComponent<ScoreManager>().UpdateScore();
         }
 
         Spawner.GetComponent<Spawner>().Spawn();
 
-        Destroy(this);
+        Destroy(gameObject);
     }
 
     void OnCollisionEnter2D(Collision2D col)
     {
         anim.SetBool("kollision", true);
 
-       
-
+        phys.velocity /= (1 + BounceCounter/10);
+        BounceCounter++;
+        phys.velocity *= (1 + BounceCounter / 10);
+        Debug.Log(BounceCounter);
         //Wähle Zufälligen Soundeffekt und spiele ihn ab
         int i = Random.Range(0, 2);
         PlaySound(i);

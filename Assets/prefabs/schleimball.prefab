@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 58794411135717126}
   - component: {fileID: 82128593037342252}
   m_Layer: 0
-  m_Name: Schleimball
+  m_Name: schleimball
   m_TagString: Ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -188,6 +188,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f101be2458c030468919450bc3dcd79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  StartSpeed: 20
+  StartYMovementRange: 0.33
   Soundeffekte:
   - {fileID: 0}
 --- !u!212 &212475951098529658

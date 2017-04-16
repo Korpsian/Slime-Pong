@@ -108,11 +108,6 @@ NavMeshSettings:
     tileSize: 256
     accuratePlacement: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &144778919 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1037662858748760, guid: 54c82af3b5b792e4aa41016501d213fd,
-    type: 2}
-  m_PrefabInternal: {fileID: 1322085605}
 --- !u!1 &316631552
 GameObject:
   m_ObjectHideFlags: 0
@@ -1172,11 +1167,6 @@ Prefab:
       propertyPath: m_Name
       value: Ball
       objectReference: {fileID: 0}
-    - target: {fileID: 114353291778383776, guid: b002d23db4d94454aa78d9253c9351f1,
-        type: 2}
-      propertyPath: Manager
-      value: 
-      objectReference: {fileID: 144778919}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b002d23db4d94454aa78d9253c9351f1, type: 2}
   m_IsPrefabParent: 0
