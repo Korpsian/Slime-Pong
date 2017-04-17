@@ -11,13 +11,17 @@ public class ScoreManager : MonoBehaviour {
 
     GameObject Spieler1;
     GameObject Spieler2;
+    GameObject Spawner;
+
 
 	// Use this for initialization
 	void Start () {
-        punkte.text = SP1 + " - " + SP2 ;
+        punkte.text = SP1 + "   " + SP2 ;
 
         Spieler1 = GameObject.FindGameObjectWithTag("SP1");
         Spieler2 = GameObject.FindGameObjectWithTag("SP2");
+        Spawner = GameObject.FindGameObjectWithTag("Spawner");
+
     }
 	
 	// Update is called once per frame
@@ -29,9 +33,25 @@ public class ScoreManager : MonoBehaviour {
 
     public void UpdateScore()
     {
-        punkte.text = SP1 + "   " + SP2;
 
-        Spieler1.GetComponent<PlayerMovement>().JumpBack();
-        Spieler2.GetComponent<PlayerMovement>().JumpBack();
+        if (SP1 == 7)
+        {
+            Spawner.GetComponent<Spawner>().GameOver = true;
+            punkte.text = ("Player 1 Wins!");
+        }
+        else if (SP2 == 7)
+        {
+            Spawner.GetComponent<Spawner>().GameOver = true;
+            punkte.text = ("Player 2 Wins!");
+        } else
+        {
+            punkte.text = SP1 + "   " + SP2;
+
+            Spieler1.GetComponent<PlayerMovement>().JumpBack();
+            Spieler2.GetComponent<PlayerMovement>().JumpBack();
+        }
+
+        Spawner.GetComponent<Spawner>().Spawn();
+
     }
 }

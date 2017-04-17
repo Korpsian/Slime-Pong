@@ -5,6 +5,7 @@ using UnityEngine;
 public class Spawner : MonoBehaviour {
 
     public GameObject Ball;
+    public bool GameOver = false;
 
 	// Use this for initialization
 	void Start () {
@@ -18,6 +19,14 @@ public class Spawner : MonoBehaviour {
 
     public void Spawn()
     {
-        Instantiate(Ball, transform.position, Quaternion.identity);
+        if (GameOver == true)
+        {
+            //Spiel vorbei 
+            Debug.Log("Spiel Vorbei");
+        } else
+        {
+            Instantiate(Ball, transform.position, Quaternion.identity);
+        }
+
     }
 }

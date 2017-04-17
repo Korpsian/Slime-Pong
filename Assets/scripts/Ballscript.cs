@@ -34,7 +34,7 @@ public class Ballscript : MonoBehaviour {
         audio = GetComponent<AudioSource>();
 
         Manager = GameObject.Find("Score Manager");
-        Spawner = GameObject.Find("Spawner");
+        Spawner = GameObject.FindGameObjectWithTag("Spawner");
     }
 	
 	void Update () {
@@ -54,8 +54,6 @@ public class Ballscript : MonoBehaviour {
             Manager.GetComponent<ScoreManager>().SP2 = Manager.GetComponent<ScoreManager>().SP2 + 1;
             Manager.GetComponent<ScoreManager>().UpdateScore();
         }
-
-        Spawner.GetComponent<Spawner>().Spawn();
 
         Destroy(gameObject);
     }

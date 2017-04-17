@@ -10,6 +10,7 @@ TagManager:
   - PointSP1
   - PointSP2
   - background
+  - Spawner
   layers:
   - Default
   - TransparentFX

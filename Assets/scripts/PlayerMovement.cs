@@ -12,6 +12,9 @@ public class PlayerMovement : MonoBehaviour
     public float XBoundryRange = 30;
     public float XBoundryMinimumRange = 0.5f;
 
+    GameObject Manager;
+    GameObject Ball;
+
     //Vector zum Abrufen der Startposition
     Vector2 StartPosition;
 
@@ -33,6 +36,9 @@ public class PlayerMovement : MonoBehaviour
             InputAxeHorizontal = "SP1 Horizontal";
             InputAxeVertikal = "SP1 Vertikal";
         }
+
+        Manager = GameObject.Find("Score Manager");
+        Ball = GameObject.FindGameObjectWithTag("Ball");
     }
 
     public void FixedUpdate()
@@ -107,9 +113,25 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.gameObject.tag == "PointSP1")
+        {
+            Manager.GetComponent<ScoreManager>().SP1 = Manager.GetComponent<ScoreManager>().SP1 + 1;
+            Destroy(Ball);
+            Manager.GetComponent<ScoreManager>().UpdateScore();
+        }
+
+        if (col.gameObject.tag == "PointSP2")
+        {
+            Manager.GetComponent<ScoreManager>().SP2 = Manager.GetComponent<ScoreManager>().SP2 + 1;
+            Destroy(Ball);
+            Manager.GetComponent<ScoreManager>().UpdateScore();
+        }
+    }
+
     public void JumpBack()
     {
-
         transform.position = StartPosition;
     }
 
