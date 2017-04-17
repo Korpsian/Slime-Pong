@@ -4,4 +4,10 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/scenes/buttonbelegung.unity
+    guid: 6db3b83803a26274195bb8f91c233058
+  - enabled: 1
+    path: Assets/scenes/testumgebung.unity
+    guid: 98814852226b11b43826d599ad4eec99
