@@ -96,6 +96,11 @@ public class Ballscript : MonoBehaviour {
         phys.velocity *= (1 + BounceCounter / 10);
         Debug.Log(BounceCounter);
 
+        if(col.gameObject.tag == "SP1" || col.gameObject.tag == "SP2")
+        {
+            phys.velocity *= 1.1f;
+        }
+
         PowerupSpawner.GetComponent<PowerUpSpawner>().SpawnPowerup();
 
         //Wähle Zufälligen Soundeffekt und spiele ihn ab
