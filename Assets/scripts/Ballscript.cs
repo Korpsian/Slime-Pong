@@ -66,6 +66,7 @@ public class Ballscript : MonoBehaviour {
         BounceCounter++;
         phys.velocity *= (1 + BounceCounter / 10);
         Debug.Log(BounceCounter);
+
         //Wähle Zufälligen Soundeffekt und spiele ihn ab
         int i = Random.Range(0, 2);
         PlaySound(i);
