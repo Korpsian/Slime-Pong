@@ -56,7 +56,7 @@ public class PlayerMovement : MonoBehaviour
             Counter = Counter + 1;
 
             //Wenn Counter = 3 Bewege Player und setze Counter zurück
-                if (Counter == 3)
+                if (Counter == 1)
                 {
                     Debug.Log("Reset Counter + MovePlayerToCenter()");
                     Counter = 0;

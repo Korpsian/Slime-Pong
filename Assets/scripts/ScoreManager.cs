@@ -34,24 +34,40 @@ public class ScoreManager : MonoBehaviour {
     public void UpdateScore()
     {
 
-        if (SP1 == 7)
+        if (SP1 >= 5)
         {
             Spawner.GetComponent<Spawner>().GameOver = true;
             punkte.text = ("Player 1 Wins!");
+
+            ZerstöreBälle();
+            
         }
-        else if (SP2 == 7)
+        else if (SP2 >= 5)
         {
             Spawner.GetComponent<Spawner>().GameOver = true;
             punkte.text = ("Player 2 Wins!");
+
+            ZerstöreBälle();
         } else
         {
             punkte.text = SP1 + "   " + SP2;
 
             Spieler1.GetComponent<PlayerMovement>().JumpBack();
             Spieler2.GetComponent<PlayerMovement>().JumpBack();
+
+            
         }
 
         Spawner.GetComponent<Spawner>().Spawn();
+    }
 
+    void ZerstöreBälle()
+    {
+        //Spiel Vorbei, zerstöre alle bälle
+        GameObject[] zerstöre = GameObject.FindGameObjectsWithTag("Ball");
+        for (int i = zerstöre.Length - 1; i > 0; i--)
+        {
+            Destroy(zerstöre[i]);
+        }
     }
 }

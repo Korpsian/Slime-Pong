@@ -25,8 +25,23 @@ public class Spawner : MonoBehaviour {
             Debug.Log("Spiel Vorbei");
         } else
         {
-            Instantiate(Ball, transform.position, Quaternion.identity);
+            GameObject [] test = GameObject.FindGameObjectsWithTag("Ball");
+
+            if (test.Length > 1)
+            {
+
+            } else
+            {
+                Instantiate(Ball, transform.position, Quaternion.identity);
+            }
+
+
         }
 
+    }
+
+    public void ExtraBall()
+    {
+        Instantiate(Ball, transform.position, Quaternion.identity);
     }
 }

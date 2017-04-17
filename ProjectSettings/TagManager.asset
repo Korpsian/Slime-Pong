@@ -11,6 +11,10 @@ TagManager:
   - PointSP2
   - background
   - Spawner
+  - PowerupKleiner
+  - "PowerupGr\xF6\xDFer"
+  - PowerupSchneller
+  - PowerupExtraball
   layers:
   - Default
   - TransparentFX

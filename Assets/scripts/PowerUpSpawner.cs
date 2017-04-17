@@ -4,18 +4,22 @@ using UnityEngine;
 
 public class PowerUpSpawner : MonoBehaviour {
 
-    // Use this for initialization
+    public GameObject[] Powerups;
 
-    // Update is called once per frame
-    void Update () {
-        StartCoroutine(ExecuteAfterTime(10f));
-    }
+    public int xPosition = -40;
+    public int xRange = 40;
 
-    IEnumerator ExecuteAfterTime(float time)
+    public int yPosition = -30;
+    public int yRange = 30;
+
+    public void SpawnPowerup()
     {
-        yield return new WaitForSeconds(time);
-        Debug.Log("Zeitverzögert");
-        // Code to execute after the delay
-    }
+        int i = Random.Range(1, 10);
+        int Powerup = Random.Range(0, Powerups.Length);
 
+        if(i == 2 || i == 8)
+        {
+            Instantiate(Powerups[Powerup], new Vector2(Random.Range(xPosition, xRange), Random.Range(yPosition, yRange)), Quaternion.identity);
+        }
+    }
 }
