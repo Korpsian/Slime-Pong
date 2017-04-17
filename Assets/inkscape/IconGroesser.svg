@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg8462"
+   inkscape:version="0.92.1 r15371"
+   sodipodi:docname="IconGroesser2.svg">
+  <defs
+     id="defs8456">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient16978">
+      <stop
+         style="stop-color:#0000ff;stop-opacity:1;"
+         offset="0"
+         id="stop16974" />
+      <stop
+         style="stop-color:#0000ff;stop-opacity:0;"
+         offset="1"
+         id="stop16976" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient16964">
+      <stop
+         id="stop16962"
+         offset="0"
+         style="stop-color:#000080;stop-opacity:0;" />
+      <stop
+         id="stop16960"
+         offset="1"
+         style="stop-color:#000080;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient16919">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop16915" />
+      <stop
+         style="stop-color:#000080;stop-opacity:1"
+         offset="1"
+         id="stop16917" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient12955"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop12953" />
+    </linearGradient>
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient16919"
+       id="radialGradient16936"
+       cx="103.1875"
+       cy="147.8884"
+       fx="103.1875"
+       fy="147.8884"
+       r="87.822968"
+       gradientTransform="matrix(1.6928308,0.01862632,-0.01520405,1.3818029,-69.242977,-58.386218)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient16964"
+       id="radialGradient16966"
+       cx="103.1875"
+       cy="147.8884"
+       fx="103.1875"
+       fy="147.8884"
+       r="87.822968"
+       gradientTransform="matrix(1.6928308,0.01862632,-0.01520405,1.3818029,-69.242977,-58.386218)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient16978"
+       id="radialGradient16982"
+       cx="103.07121"
+       cy="147.92523"
+       fx="103.07121"
+       fy="147.92523"
+       r="77.87265"
+       gradientTransform="matrix(1.1794925,0.0043184,-0.00414028,1.130843,-17.888059,-19.800086)"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.90871639"
+     inkscape:cx="312.81795"
+     inkscape:cy="552.324"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer2"
+     showgrid="false"
+     inkscape:window-width="2560"
+     inkscape:window-height="1028"
+     inkscape:window-x="-8"
+     inkscape:window-y="342"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata8459">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Hintergrund"
+     inkscape:groupmode="layer"
+     id="layer1"
+     sodipodi:insensitive="true">
+    <ellipse
+       style="fill:url(#radialGradient16966);fill-opacity:1;fill-rule:evenodd;stroke:url(#radialGradient16936);stroke-width:0.26499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0"
+       id="path12939"
+       cx="103.1875"
+       cy="147.8884"
+       rx="87.690468"
+       ry="85.989586" />
+    <ellipse
+       style="fill:url(#radialGradient16982);fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.26852968;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0"
+       id="path16972"
+       cx="103.07121"
+       cy="147.92523"
+       rx="77.738388"
+       ry="77.156059" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Overlay">
+    <ellipse
+       style="display:inline;fill:#000000;stroke-width:0.21724723"
+       id="path75349"
+       cx="103.25471"
+       cy="146.73978"
+       rx="25.513391"
+       ry="25.22991" />
+    <g
+       id="use80163"
+       style="fill:#000000;stroke:#000000"
+       transform="matrix(2.9375463,0,0,2.8344001,113.21769,84.414274)">
+      <title
+         id="title17042">Forward and Right Arrow</title>
+      <path
+         id="path17044"
+         style="stroke:none;stroke-width:0.26458332"
+         d="M 14.816667,4.2333333 V 12.7 L 11.90625,15.610417 V 9.2604167 L 5.8208333,15.345833 3.7041667,13.229167 9.7895833,7.14375 h -6.35 L 6.35,4.2333333 Z"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       id="use80214"
+       style="fill:#000000;stroke:#000000"
+       transform="matrix(2.9631383,0,0,2.9631383,39.208154,83.09421)">
+      <title
+         id="title17036">Forward and Left Arrow</title>
+      <path
+         id="path17038"
+         style="stroke:none;stroke-width:0.26458332"
+         d="M 4.2333333,4.2333333 H 12.7 L 15.610417,7.14375 H 9.2604167 L 15.345833,13.229167 13.229167,15.345833 7.14375,9.2604167 V 15.610417 L 4.2333333,12.7 Z"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       id="use80265"
+       style="fill:#000000;stroke:#000000"
+       transform="matrix(2.830005,0,0,2.8256099,39.572395,154.46775)"
+       inkscape:transform-center-x="-4.1074179"
+       inkscape:transform-center-y="2.5288411">
+      <title
+         id="title17024">Left and Down Arrow</title>
+      <path
+         id="path17026"
+         style="stroke:none;stroke-width:0.26458332"
+         d="M 4.2664062,14.783594 V 6.3169271 L 7.1768229,3.4065104 v 6.35 L 13.26224,3.6710937 15.378906,5.7877604 9.2934896,11.873177 H 15.64349 l -2.910417,2.910417 z"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       id="use80316"
+       style="fill:#000000;stroke:#000000"
+       transform="matrix(2.8475854,0,0,2.9067809,113.84216,152.86048)">
+      <title
+         id="title17030">Right and Down Arrow</title>
+      <path
+         id="path17032"
+         style="stroke:none;stroke-width:0.26458332"
+         d="M 14.816667,14.816667 H 6.35 L 3.4395833,11.90625 h 6.35 L 3.7041667,5.8208333 5.8208333,3.7041667 11.90625,9.7895833 v -6.35 L 14.816667,6.35 Z"
+         inkscape:connector-curvature="0" />
+    </g>
+  </g>
+</svg>
